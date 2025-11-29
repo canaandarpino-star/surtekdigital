@@ -3,84 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios | SURTEK - Código Estratégico</title>
-    <meta name="description" content="Soluciones Full-Stack, desarrollo web a medida, e-commerce y UX/UI estratégico.">
-    <link rel="stylesheet" href="assets/css/style.css"> 
+    <title>Servicios | SURTEK - Soluciones Digitales</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <header>
-        <div class="nav-content container">
-            <a href="index.html" class="logo">SUR<span style="color: var(--primary-color);">TEK</span></a>
-            <nav id="main-nav">
+        <div class="container navbar">
+            <div class="logo">SURTEK</div>
+            <nav>
                 <a href="index.html">Inicio</a>
-                <a href="portfolio.html">Portafolio</a>
                 <a href="servicios.html" class="active">Servicios</a>
-                <a href="sobremi.html">Sobre Mí</a>
-                <a href="contacto.html" class="btn btn-primary">Contacto</a>
+                <a href="contacto.html" class="cta-button">Contacto</a> 
             </nav>
-            <div class="menu-toggle" id="menu-toggle">☰</div>
         </div>
     </header>
 
-    <main>
-        <section class="container" style="padding-top: 80px; padding-bottom: 80px;">
-            <h1 style="text-align: center; margin-bottom: 20px; font-size: 2.8em; color: var(--primary-color);">Nuestras Soluciones de Desarrollo</h1>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px; font-size: 1.1em; color: var(--subtle-text-color);">
-                Transformamos tus objetivos de negocio en código de alto impacto.
-            </p>
+    <section class="hero-small" style="background-color: var(--surface-color); padding: 80px 0;">
+        <div class="container" style="text-align: center;">
+            <h1 style="color: var(--primary-color);">Nuestras Soluciones de Desarrollo</h1>
+            <p style="color: var(--text-secondary);">Transformamos tus objetivos de negocio en código de alto impacto y UX/UI estratégica.</p>
+        </div>
+    </section>
 
-            <div class="services-grid">
-                <div class="service-card" style="text-align: left;">
+    <section class="section">
+        <div class="container">
+            <div class="grid-2-cols">
+                <div class="card">
                     <h3 style="color: var(--primary-color);">Paquete E-commerce Pro</h3>
-                    <ul class="dark-list">
+                    <ul>
                         <li>Diseño y desarrollo Full-Stack de tiendas online orientadas a volumen de venta.</li>
-                        <li>Integración de Pasarelas de Pago.</li>
-                        <li>Configuración de Inventario y Envíos.</li>
-                        <li>Diseño UX/UI de Checkout optimizado.</li>
+                        <li>Integración de Pasarelas de Pago (Mercado Pago, Stripe, etc.).</li>
+                        <li>Configuración de Inventario, Gestión de Pedidos y Envíos.</li>
+                        <li>Diseño UX/UI de Checkout optimizado para máxima conversión.</li>
                     </ul>
-                    <div style="text-align: center; margin-top: auto;">
-                        <a href="contacto.html" class="btn btn-primary" style="width: 100%;">Solicitar Presupuesto</a>
-                    </div>
+                    <a href="contacto.html" class="cta-button" style="margin-top: 20px;">Solicitar Presupuesto</a>
                 </div>
-                <div class="service-card" style="text-align: left;">
-                    <h3 style="color: var(--primary-color);">Apps y Sistemas a Medida</h3>
-                    <ul class="dark-list">
+                
+                <div class="card">
+                    <h3 style="color: var(--primary-color);">Desarrollo de Apps y Sistemas a Medida</h3>
+                    <ul>
                         <li>Desarrollo de aplicaciones web complejas (SaaS, CRMs, Dashboards) para automatizar procesos internos.</li>
-                        <li>Arquitectura Full-Stack (React/Node).</li>
-                        <li>Integración con APIs y bases de datos.</li>
-                        <li>Escalabilidad garantizada.</li>
+                        <li>Arquitectura Full-Stack robusta con tecnologías modernas (React/Node.js).</li>
+                        <li>Integración con APIs externas y bases de datos personalizadas.</li>
+                        <li>Escalabilidad garantizada para el crecimiento futuro de tu negocio.</li>
                     </ul>
-                    <div style="text-align: center; margin-top: auto;">
-                        <a href="contacto.html" class="btn btn-primary" style="width: 100%;">Consultar Requerimientos</a>
-                    </div>
-                </div>
-                <div class="service-card" style="text-align: left;">
-                    <h3 style="color: var(--primary-color);">Web Corporativa de Alto Rendimiento</h3>
-                    <ul class="dark-list">
-                        <li>Webs profesionales, Landing Pages y Portafolios optimizados para la velocidad y la imagen corporativa.</li>
-                        <li>Máxima puntuación en Google PageSpeed.</li>
-                        <li>Diseño Responsive avanzado.</li>
-                        <li>Estructura SEO técnica.</li>
-                    </ul>
-                    <div style="text-align: center; margin-top: auto;">
-                        <a href="contacto.html" class="btn btn-primary" style="width: 100%;">Ver Opciones</a>
-                    </div>
+                    <a href="contacto.html" class="cta-button" style="margin-top: 20px;">Consultar Requerimientos</a>
                 </div>
             </div>
-        </section>
-    </main>
 
+            <div class="card" style="margin-top: 30px;">
+                <h3 style="color: var(--primary-color);">Web Corporativa de Alto Rendimiento</h3>
+                <ul>
+                    <li>Webs profesionales, Landing Pages y Portafolios optimizados para la velocidad y la imagen corporativa.</li>
+                    <li>Máxima puntuación en Google PageSpeed y auditorías de rendimiento.</li>
+                    <li>Diseño Responsive avanzado para una experiencia perfecta en todos los dispositivos.</li>
+                    <li>Estructura SEO técnica para una mejor visibilidad en buscadores.</li>
+                </ul>
+                <a href="contacto.html" class="cta-button" style="margin-top: 20px;">Ver Opciones</a>
+            </div>
+            
+            <p class="centered-note">¿No encuentras lo que buscas? <a href="contacto.html" style="color: var(--primary-color);">Hablemos de tu idea.</a></p>
+        </div>
+    </section>
+    
     <footer>
-        <div class="footer-content container">
-            <p>&copy; 2025 SURTEK. Desarrollado por Canaan Darpino. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/canaan-darpino-3baa87210/" target="_blank">LinkedIn</a>
-                <a href="#">GitHub</a>
+        <div class="container">
+            <p>© 2025 SURTEK. Desarrollado por Canaan Darpino.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" style="color: var(--text-secondary);">LinkedIn</a> |
+                <a href="https://github.com/canaandarpino-star" target="_blank" style="color: var(--text-secondary);">GitHub</a>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
