@@ -126,11 +126,13 @@ header .logo {
     box-shadow: inset 0 -10px 20px rgba(0,0,0,0.5); /* Sombra interna sutil */
 }
 
-.hero h1 {
+/* ========================= SECCIÓN HERO (BANNER) - DARK MODE ========================= */
+.hero {
     color: white;
-    font-size: 3.5em; /* Títulos más grandes */
-    margin-bottom: 10px; 
-    letter-spacing: -1px; /* Espaciado de letras ajustado */
+    padding: 120px 0; /* Más padding para un look más imponente */
+    text-align: center;
+    background-color: var(--surface-color); /* ¡CAMBIADO A GRIS OSCURO! */
+    box-shadow: inset 0 -10px 20px rgba(0,0,0,0.5); /* Sombra interna sutil */
 }
 
 .hero h2 {
