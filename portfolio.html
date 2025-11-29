@@ -3,91 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | SURTEK - Código Estratégico</title>
-    <meta name="description" content="Explora los proyectos de desarrollo Full-Stack y e-commerce de SURTEK.">
-    <link rel="stylesheet" href="assets/css/style.css"> 
+    <title>Portafolio | SURTEK - Proyectos Destacados</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <header>
-        <div class="nav-content container">
-            <a href="index.html" class="logo">SUR<span style="color: var(--primary-color);">TEK</span></a>
-            <nav id="main-nav">
+        <div class="container navbar">
+            <div class="logo">SURTEK</div>
+            <nav>
                 <a href="index.html">Inicio</a>
                 <a href="portfolio.html" class="active">Portafolio</a>
                 <a href="servicios.html">Servicios</a>
                 <a href="sobremi.html">Sobre Mí</a>
-                <a href="contacto.html" class="btn btn-primary">Contacto</a>
+                <a href="contacto.html" class="cta-button">Contacto</a>
             </nav>
-            <div class="menu-toggle" id="menu-toggle">☰</div>
         </div>
     </header>
 
-    <main>
-        <section class="container" style="padding-top: 80px; padding-bottom: 80px;">
-            <h1 style="text-align: center; margin-bottom: 20px; font-size: 2.8em; color: var(--primary-color);">Nuestro Portafolio</h1>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px; font-size: 1.1em; color: var(--subtle-text-color);">
-                Explora proyectos que hemos diseñado y desarrollado, enfocados en resultados y experiencia de usuario.
-            </p>
+    <section class="hero-small">
+        <div class="container">
+            <h1>Nuestro Portafolio Destacado</h1>
+            <p>Explora proyectos Full-Stack y soluciones e-commerce diseñadas para la conversión y la escalabilidad.</p>
+        </div>
+    </section>
 
-            <div class="portfolio-filters" style="text-align: center; margin-bottom: 40px;">
-                <a href="#" class="filter-btn active">Todos</a>
-                <a href="#" class="filter-btn">E-commerce</a>
-                <a href="#" class="filter-btn">Landing Pages</a>
-                <a href="#" class="filter-btn">Apps a Medida</a>
-            </div>
+    <section class="section">
+        <div class="container">
+            <div class="showcase-grid">
+                
+                <a href="#" class="showcase-item">
+                    <img src="assets/img/portafolio/tienda_moda.jpg" alt="Tienda de Moda Online">
+                    <div class="showcase-info">
+                        <h3>Tienda de Moda Online</h3>
+                        <p>Plataforma e-commerce B2C con gestión de inventario y pagos integrada. Solución Full-Stack y UX/UI.</p>
+                    </div>
+                </a>
 
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="item-details">
-                        <h3 style="color: var(--primary-color);">Tienda de Moda Online</h3>
-                        <p style="color: var(--subtle-text-color);">Plataforma e-commerce B2C con gestión de inventario y pagos integrada. Solución Full-Stack.</p>
-                        <div class="tags">
-                            <span>E-commerce</span><span>Shopify</span><span>UX/UI</span>
-                        </div>
+                <a href="#" class="showcase-item">
+                    <img src="assets/img/portafolio/dashboard_crm.jpg" alt="Dashboard de Gestión (CRM)">
+                    <div class="showcase-info">
+                        <h3>Dashboard de Gestión (CRM)</h3>
+                        <p>Sistema interno de clientes y proyectos desarrollado con React y Node.js para consultora.</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="item-details">
-                        <h3 style="color: var(--primary-color);">Landing Page de Captación</h3>
-                        <p style="color: var(--subtle-text-color);">Diseño enfocado en alta conversión para una campaña de marketing de servicios digitales.</p>
-                        <div class="tags">
-                            <span>Landing Page</span><span>Conversión</span><span>React</span>
-                        </div>
+                </a>
+
+                <a href="#" class="showcase-item large-item">
+                    <img src="assets/img/portafolio/landing_captacion.jpg" alt="Landing Page de Captación">
+                    <div class="showcase-info">
+                        <h3>Landing Page de Captación</h3>
+                        <p>Diseño enfocado en alta conversión para campañas de marketing de servicios digitales. HTML/CSS de alto rendimiento.</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="item-details">
-                        <h3 style="color: var(--primary-color);">CRM para Consultora</h3>
-                        <p style="color: var(--subtle-text-color);">Sistema interno de gestión de clientes y seguimiento de proyectos (SaaS a medida).</p>
-                        <div class="tags">
-                            <span>App a Medida</span><span>Full-Stack</span><span>Base de Datos</span>
-                        </div>
+                </a>
+
+                <a href="#" class="showcase-item tall-item">
+                    <img src="assets/img/portafolio/web_corporativa.jpg" alt="Web Corporativa">
+                    <div class="showcase-info">
+                        <h3>Web Corporativa</h3>
+                        <p>Web de servicios financieros con enfoque en velocidad, arquitectura SEO avanzada y rendimientos superiores en Google PageSpeed.</p>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="item-details">
-                        <h3 style="color: var(--primary-color);">Web Corporativa</h3>
-                        <p style="color: var(--subtle-text-color);">Web de servicios financieros con enfoque en velocidad y arquitectura SEO avanzada.</p>
-                        <div class="tags">
-                            <span>Web Corporativa</span><span>Rendimiento</span><span>SEO</span>
-                        </div>
+                </a>
+                
+                <a href="#" class="showcase-item">
+                    <img src="assets/img/portafolio/woocommerce_digital.jpg" alt="Woocommerce de Productos Digitales">
+                    <div class="showcase-info">
+                        <h3>Woocommerce de Productos Digitales</h3>
+                        <p>Migración de plataforma y optimización de velocidad de carga para la venta digital.</p>
                     </div>
-                </div>
+                </a>
+
+                <a href="#" class="showcase-item">
+                    <img src="assets/img/portafolio/app_medida.jpg" alt="Aplicación a Medida">
+                    <div class="showcase-info">
+                        <h3>Aplicación de Logística a Medida</h3>
+                        <p>Aplicación móvil y web para gestión de rutas y seguimiento de entregas en tiempo real.</p>
+                    </div>
+                </a>
+
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer-content container">
-            <p>&copy; 2025 SURTEK. Desarrollado por Canaan Darpino. Todos los derechos reservados.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/canaan-darpino-3baa87210/" target="_blank">LinkedIn</a>
-                <a href="#">GitHub</a>
+        <div class="container">
+            <p>© 2025 SURTEK. Desarrollado por Canaan Darpino. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/canaandarpino-star" target="_blank">GitHub</a>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
