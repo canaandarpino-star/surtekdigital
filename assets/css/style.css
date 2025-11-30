@@ -21,7 +21,7 @@ body {
     font-family: var(--font-body);
     margin: 0;
     line-height: 1.6;
-    /* Necesitamos un fondo con algo de detalle para que el blur se note */
+    /* ESTOS SON LOS GRADIENTES QUE DEBEN ESTAR */
     background-image: radial-gradient(circle at top left, var(--secondary-color) 0%, transparent 40%),
                       radial-gradient(circle at bottom right, rgba(0, 204, 153, 0.3) 0%, transparent 50%);
     background-blend-mode: multiply;
