@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | SURTEK - Hablemos de tu Proyecto</title>
+    <title>Contacto | SURTEK - Hablemos de tu Proyecto Glassmorphism</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
+        /* Estilos específicos de Contacto para Glassmorphism */
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -14,10 +15,8 @@
             margin-top: 40px;
         }
 
-        .contact-info .card {
-            background-color: var(--surface-color);
+        .contact-info .glass-card { /* USAMOS GLASS-CARD AQUI TAMBIEN */
             padding: 30px;
-            border-radius: 8px;
         }
 
         .contact-info h3 {
@@ -35,10 +34,8 @@
             text-decoration: none;
         }
 
-        .contact-form .card {
-            background-color: var(--surface-color);
+        .contact-form .glass-card { /* USAMOS GLASS-CARD AQUI TAMBIEN */
             padding: 30px;
-            border-radius: 8px;
         }
 
         .contact-form h3 {
@@ -61,13 +58,17 @@
         .form-group input[type="email"],
         .form-group select,
         .form-group textarea {
-            width: calc(100% - 20px); /* Ajuste para padding */
+            width: calc(100% - 24px); /* Ajuste para padding y borde */
             padding: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 4px;
-            background-color: var(--background-color);
-            color: var(--text-color);
             font-size: 1em;
+            /* Estilos Glassmorphism para Inputs */
+            background: rgba(30, 30, 30, 0.2);
+            border: 1px solid rgba(0, 204, 153, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            color: var(--text-color);
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
 
         .form-group textarea {
@@ -81,7 +82,7 @@
         .form-group textarea:focus {
             outline: none;
             border-color: var(--primary-color);
-            box-shadow: 0 0 5px rgba(0, 204, 153, 0.5);
+            box-shadow: 0 0 8px rgba(0, 204, 153, 0.6);
         }
 
         .form-group button {
@@ -122,8 +123,7 @@
         </div>
     </header>
 
-    <section class="hero-small" style="background-color: var(--surface-color); padding: 80px 0;">
-        <div class="container" style="text-align: center;">
+    <section class="hero-small glass-hero" style="padding: 80px 0;"> <div class="container" style="text-align: center;">
             <h1 style="color: var(--primary-color);">Comencemos tu Proyecto.</h1>
             <p style="color: var(--text-secondary);">Cuéntanos tus objetivos y te enviaremos una propuesta personalizada de SURTEK.</p>
         </div>
@@ -133,23 +133,20 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="card">
-                        <h3>Información de SURTEK</h3>
+                    <div class="glass-card"> <h3>Información de SURTEK</h3>
                         <p><strong>Email:</strong> <a href="mailto:contactosurtek@gmail.com">contactosurtek@gmail.com</a></p>
                         <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/5491156364891" target="_blank">+54 9 11 5636 4891</a></p>
                         <p><strong>Ubicación:</strong> Buenos Aires, Argentina (Servicio remoto global)</p>
                     </div>
 
-                    <div class="card" style="margin-top: 30px;">
-                        <h3>¿Tienes Prisa?</h3>
+                    <div class="glass-card" style="margin-top: 30px;"> <h3>¿Tienes Prisa?</h3>
                         <p style="color: var(--text-secondary);">Para consultas urgentes o agendar una llamada rápida, usa nuestro botón de WhatsApp directo.</p>
                         <a href="https://wa.me/5491156364891" target="_blank" class="cta-button" style="margin-top: 15px;">Enviar WhatsApp</a>
                     </div>
                 </div>
 
                 <div class="contact-form">
-                    <div class="card">
-                        <h3>Envíanos un Mensaje</h3>
+                    <div class="glass-card"> <h3>Envíanos un Mensaje</h3>
                         <form action="mailto:contactosurtek@gmail.com" method="post" enctype="text/plain">
                             <div class="form-group">
                                 <label for="nombre">Nombre Completo</label>
