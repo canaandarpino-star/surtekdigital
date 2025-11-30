@@ -1,5 +1,6 @@
+
 :root {
-    /* ------------------- PALETA DARK MODE MINIMALISTA ------------------- */
+    /* ------------------- PALETA DARK MODE MINIMALISTA SURTEK ------------------- */
     --background-color: #121212; /* Negro profundo (Fondo principal) */
     --surface-color: #1E1E1E;   /* Gris oscuro (Para menús y tarjetas) */
     --primary-color: #00CC99;    /* Verde Menta (Color de ACENTO, CTAs y títulos) */
@@ -20,6 +21,10 @@ body {
     font-family: var(--font-body);
     margin: 0;
     line-height: 1.6;
+    /* Necesitamos un fondo con algo de detalle para que el blur se note */
+    background-image: radial-gradient(circle at top left, var(--secondary-color) 0%, transparent 40%),
+                      radial-gradient(circle at bottom right, rgba(0, 204, 153, 0.3) 0%, transparent 50%);
+    background-blend-mode: multiply;
 }
 
 h1, h2, h3 {
@@ -35,7 +40,7 @@ h1, h2, h3 {
     padding: 0 20px;
 }
 
-/* ========================= ESTILOS MINIMALISTAS (Componentes) ========================= */
+/* ========================= ESTILOS GENERALES (Mantenidos) ========================= */
 
 /* Menú de Navegación */
 .navbar {
@@ -67,8 +72,10 @@ h1, h2, h3 {
     background-color: var(--primary-color);
     color: var(--background-color) !important;
     padding: 8px 20px;
+    border: none; /* Eliminar bordes para el Glassmorphism */
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
@@ -77,13 +84,11 @@ h1, h2, h3 {
     color: var(--text-color) !important;
 }
 
-/* Sección Hero Minimalista */
+/* Sección Hero (Base) */
 .hero {
     color: var(--text-color);
     padding: 120px 0 100px 0;
     text-align: center;
-    /* Color de fondo: ¡Gris Oscuro Consistente! */
-    background-color: var(--surface-color); 
 }
 
 .hero h1 {
@@ -119,81 +124,6 @@ h1, h2, h3 {
     gap: 30px;
 }
 
-/* Estilo de Tarjetas Minimalistas */
-.card {
-    background-color: var(--surface-color);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 30px;/* ========================= VARIABLES DE COLOR (PALETA DARK MODE) ========================= */
-.showcase-item:hover {
-    transform: translateY(-5px);
-    /* Resalta la tarjeta con una sombra sutil del color de acento verde */
-    box-shadow: 0 10px 30px rgba(0, 204, 153, 0.3); 
-}
-
-/* Estilo de la Imagen (la imagen debe ser el foco visual) */
-.showcase-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    transition: transform 0.5s ease;
-}
-
-.showcase-item:hover img {
-    transform: scale(1.05); /* Zoom sutil en hover */
-}
-
-/* Capa de Información (Título y Descripción) que aparece sobre la imagen */
-.showcase-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
-    color: white;
-    padding: 20px;
-    transform: translateY(100%); /* Oculta la información inicialmente */
-    transition: transform 0.4s ease;
-}
-
-.showcase-item:hover .showcase-info {
-    transform: translateY(0); /* Muestra la información al pasar el mouse */
-}
-
-.showcase-info h3 {
-    color: var(--primary-color); /* Título en color de acento (verde) */
-    margin-bottom: 5px;
-}
-
-/* Media Query: Desactivar la asimetría en móviles para mantener la legibilidad */
-@media (max-width: 768px) {
-    .showcase-grid {
-        grid-template-columns: 1fr;
-    }
-    .showcase-item:nth-child(3n + 1),
-    .showcase-item:nth-child(4n) {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-}
-
-    border-radius: 8px;
-    transition: box-shadow 0.3s, border-color 0.3s;
-}
-
-.card:hover {
-    box-shadow: 0 0 15px rgba(0, 204, 153, 0.2);
-    border-color: var(--primary-color);
-}
-
-.card h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.card p {
-    color: var(--text-secondary);
-}
-
 .centered-note {
     text-align: center;
     margin-top: 50px;
@@ -212,4 +142,54 @@ footer {
     color: var(--text-secondary);
     text-decoration: none;
     margin: 0 10px;
+}
+
+/* ========================= ESTILOS GLASSPORPHISM (Nuevos) ========================= */
+
+.glass-card {
+    background: rgba(30, 30, 30, 0.4); /* Surface color con transparencia */
+    border: 1px solid rgba(0, 204, 153, 0.3); /* Borde sutil del primary color */
+    border-radius: 12px;
+    padding: 30px;
+    backdrop-filter: blur(10px); /* EL EFECTO DE BLUR */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Sombra para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 204, 153, 0.4); /* Sombra más pronunciada al hover */
+    border-color: var(--primary-color); /* Borde más visible al hover */
+}
+
+/* Hero con Glassmorphism (para tener el efecto de fondo blurred) */
+.hero.glass-hero {
+    background: rgba(30, 30, 30, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: inset 0 -5px 15px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 204, 153, 0.2);
+}
+
+/* Campos de formulario Glassmorphism */
+.form-glass {
+    background: rgba(30, 30, 30, 0.2);
+    border: 1px solid rgba(0, 204, 153, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: var(--text-color);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-glass:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 204, 153, 0.6);
+}
+
+/* Media Query para Contacto */
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr 2fr; /* Info a la izquierda, Formulario a la derecha */
+    }
 }
